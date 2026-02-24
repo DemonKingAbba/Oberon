@@ -1,7 +1,9 @@
+export const runtime = "nodejs";
+
 import { NextResponse } from "next/server";
 import { google } from "googleapis";
 import { getServerSession } from "next-auth";
-import authOptions from "@/app/lib/serverAuthOptions";
+import authOptions from "../../lib/serverAuthOptions";
 
 export async function GET() {
   const session = await getServerSession(authOptions as any);

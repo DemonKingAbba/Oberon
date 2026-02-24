@@ -1,8 +1,8 @@
 "use client";
 import { signIn, signOut, useSession } from "next-auth/react";
 import React, { useEffect, useMemo, useState } from "react";
-import { Section } from "@/app/components/Section";
-import { Card } from "@/app/components/Card";
+import { Section } from "./components/Section";
+import { Card } from "./components/Card";
 
 type GmailItem = { id:string; from:string; subject:string; type:"URGENT"|"FIX_REQUIRED"|"INFO"; title:string; body:string; drawing:string|null; };
 type CalItem = { id:string; title:string; start:string; end:string; location:string|null; };

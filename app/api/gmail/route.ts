@@ -1,8 +1,10 @@
+export const runtime = "nodejs";
+
 import { NextResponse } from "next/server";
 import { google } from "googleapis";
 import { getServerSession } from "next-auth";
-import { parseText } from "@/app/lib/parsing";
-import authOptions from "@/app/lib/serverAuthOptions";
+import { parseText } from "../../lib/parsing";
+import authOptions from "../../lib/serverAuthOptions";
 
 export async function GET() {
   const session = await getServerSession(authOptions as any);
