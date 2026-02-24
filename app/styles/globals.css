@@ -1,0 +1,9 @@
+:root{
+  --bg:#061A2B; --surface:#0A243A; --surface2:#0E2F4A;
+  --text:#E6F0FF; --muted:#9FB6D1;
+  --red:#FF4D4D; --amber:#FFB020; --blue:#4DA3FF;
+  --radius:16px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:var(--text)}
